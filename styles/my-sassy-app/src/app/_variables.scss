@@ -1,0 +1,33 @@
+@import "./functions";
+//Allowed values: Dark, Light, Default
+$theme: Dark;
+
+// *** colors section
+$text-color: #222222;
+$header-height: 60px;
+$body-background-color: #fff;
+$theme-color: #170a48;
+$secondary-color: #f27731;
+$terenary-color: #ccf962;
+$link-color: $secondary-color;
+$menu-item-color: #cccccc;
+
+@if $theme == Dark {
+    $text-color: #fff;
+    $body-background-color: #22222a;
+    $theme-color: #42424a;
+    $secondary-color: #f27731;
+    $terenary-color: #ccf962;
+    $link-color: $secondary-color;
+    $menu-item-color: #cccccc;
+
+}
+// === Fonts ===
+$text-font: "Alegreya Sans", Arial, sans-serif;
+$headline-font: 'Titillium Web', Georgia, serif;
+
+// === Size ==
+$header-height: 60px;
+$content-width: 960px;
+$footer-height: 90px;
+// $col: col-width($columns: 8);
